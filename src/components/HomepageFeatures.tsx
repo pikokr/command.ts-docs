@@ -24,15 +24,15 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
   },
-  // {
-  //   title: '',
-  //   image: '/img/undraw_docusaurus_mountain.svg',
-  //   description: (
-  //     <>
-  //         와 샌즈
-  //     </>
-  //   ),
-  // },
+  {
+    title: '슬래시 커맨드 지원',
+    image: '/img/undraw_docusaurus_mountain.svg',
+    description: (
+      <>
+          와 겁나 쓸데없이(?) 슬래시커맨드를 지원해요
+      </>
+    ),
+  },
   // {
   //   title: 'Powered by React',
   //   image: '/img/undraw_docusaurus_mountain.svg',
