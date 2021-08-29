@@ -22,9 +22,15 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          docId: 'intro',
+          docId: 'tutorial/intro',
           position: 'left',
-          label: '문서',
+          label: '튜토리얼',
+        },
+        {
+          type: 'doc',
+          docId: 'api/index',
+          position: 'left',
+          label: 'API',
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -41,8 +47,12 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: '문서',
-              to: '/docs/intro',
+              label: '튜토리얼',
+              to: '/docs/tutorial/intro',
+            },
+            {
+              label: 'API',
+              to: '/docs/api',
             },
           ],
         },
@@ -94,6 +104,18 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+      },
+    ],
+  ],
+  plugins: [
+    [
+      'docusaurus-plugin-typedoc',
+
+      // Plugin / TypeDoc options
+      {
+        entryPoints: ['./module/src/index.ts'],
+        tsconfig: './module/tsconfig.json',
+        watch: process.env.TYPEDOC_WATCH,
       },
     ],
   ],
