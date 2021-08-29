@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## 모듈 만들기
 
-모듈은 `Module` 클래스를 확장해야 합니다.
+모듈은 `Module` 클래스를 확장해야 해요.
 
 ```ts
 import { Module, CommandClient } from "@pikostudio/command.ts"
@@ -25,13 +25,13 @@ export function install(client: CommandClient) {
 
 ## install 함수
 
-install 함수는 `loadModule`에서 모듈 인스턴스를 가져올 때 사용합니다. 클라이언트가 첫번째 파라미터로 넘어옵니다.
+install 함수는 `loadModule`에서 모듈 인스턴스를 가져올 때 사용해요. 클라이언트가 첫번째 파라미터로 넘어와요.
 
 ## 모듈 로딩하기
 
 ### 상대경로로 로딩하기
 
-상대경로는 `rootPath` 기준입니다.
+상대경로는 `rootPath` 기준이에요
 
 ```ts
 client.loadModule('modules/hello')
@@ -46,3 +46,11 @@ import * as path from 'path'
 
 client.loadModule(path.join(__dirname, 'modules/hello'), true)
 ```
+
+## 라이프사이클
+
+모듈의 `load`, `unload` 메소드는 모듈 모듈을 로드, 언로드 할때 실행돼요!
+
+`load` 메서드는 모듈 로딩 직전에 실행돼요!
+
+`unload` 메서드는 모듈 언로딩 직전에 실행돼요!
