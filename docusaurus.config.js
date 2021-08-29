@@ -24,7 +24,7 @@ module.exports = {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: '튜토리얼',
+          label: '문서',
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -41,7 +41,7 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: '튜토리얼',
+              label: '문서',
               to: '/docs/intro',
             },
           ],
@@ -83,7 +83,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/pikokr/command.ts-docs/edit/master/website/',
+          editUrl: 'https://github.com/pikokr/command.ts-docs/edit/master/',
         },
         // blog: {
         //   showReadingTime: true,

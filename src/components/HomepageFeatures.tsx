@@ -20,7 +20,7 @@ const FeatureList: FeatureItem[] = [
     image: '/img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Command.TS는 타입스크립트의 데코레이터를 사용하여 커맨드를 제작합니다. 네 그렇다고요 에에 더 쓸게없네요
+        Command.TS는 타입스크립트 데코레이터를 이용해서 커맨드를 만든다구요!
       </>
     ),
   },
@@ -29,7 +29,7 @@ const FeatureList: FeatureItem[] = [
     image: '/img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-          와 겁나 쓸데없이(?) 슬래시커맨드를 지원해요
+          슬래시 커맨드 자동 등록을 지원해요!
       </>
     ),
   },
