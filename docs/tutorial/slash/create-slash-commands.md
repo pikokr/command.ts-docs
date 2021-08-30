@@ -24,7 +24,8 @@ import {CommandInteraction} from "discord.js";
 class SlashCommands extends Module {
     @slashCommand({
         name: '와아', // 커맨드 이름
-        description: '와아 조아' // 커맨드 설명
+        description: '와아 조아', // 커맨드 설명
+        options: []
     })
     wa(i: CommandInteraction) {
         i.reply({
