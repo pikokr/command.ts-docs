@@ -25,7 +25,7 @@ export function install(client: CommandClient) {
 
 ## install 함수
 
-install 함수는 `loadModule`에서 모듈 인스턴스를 가져올 때 사용해요. 클라이언트가 첫번째 파라미터로 넘어와요.
+`install` 함수는 `loadModule`에서 모듈 인스턴스를 가져올 때 사용해요. 클라이언트가 첫번째 파라미터로 넘어와요.
 
 ## 모듈 로딩하기
 

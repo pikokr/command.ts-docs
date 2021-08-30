@@ -32,6 +32,10 @@ module.exports = {
           position: 'left',
           label: 'API',
         },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/pikokr/command.ts-v2',
@@ -119,4 +123,8 @@ module.exports = {
       },
     ],
   ],
+  i18n: {
+    defaultLocale: 'ko',
+    locales: ['ko']
+  }
 };

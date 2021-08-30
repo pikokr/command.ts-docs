@@ -21,7 +21,7 @@ class Permissions extends Module {
 
 ```ts
 import { userPermissions, clientPermissions } from "@pikostudio/command.ts";
-import {Message} from "discord.js";
+import { Message } from "discord.js";
 
 class Permissions extends Module {
     @clientPermissions(8)
