@@ -18,7 +18,7 @@ new CommandClient(/*...*/ {
 ## 사용하기
 
 ```ts
-import {Module, slashCommand} from "@pikostudio/command.ts";
+import {Module, slashCommand} from "@pikokr/command.ts";
 import {CommandInteraction} from "discord.js";
 
 class SlashCommands extends Module {
@@ -38,7 +38,7 @@ class SlashCommands extends Module {
 ## 옵션 받기
 
 ```ts
-import {Module, slashCommand} from "@pikostudio/command.ts";
+import {Module, slashCommand} from "@pikokr/command.ts";
 import {CommandInteraction, CommandInteractionOptionResolver} from "discord.js";
 
 class SlashCommands extends Module {

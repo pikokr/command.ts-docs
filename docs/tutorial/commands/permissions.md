@@ -5,7 +5,7 @@
 ## 유저 권한 체크
 
 ```ts
-import {userPermissions, command} from "@pikostudio/command.ts";
+import {userPermissions, command} from "@pikokr/command.ts";
 import {Message} from "discord.js";
 
 class Permissions extends Module {
@@ -20,7 +20,7 @@ class Permissions extends Module {
 ## 봇 권한 체크
 
 ```ts
-import { userPermissions, clientPermissions } from "@pikostudio/command.ts";
+import { userPermissions, clientPermissions } from "@pikokr/command.ts";
 import { Message } from "discord.js";
 
 class Permissions extends Module {

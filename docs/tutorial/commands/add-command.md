@@ -5,7 +5,7 @@
 ### 명령어 만들기
 
 ```ts
-import { Module, command } from "@pikostudio/command.ts"
+import { Module, command } from "@pikokr/command.ts"
 import { Message } from "discord.js"
 
 class HelloModule extends Module {
@@ -21,7 +21,7 @@ class HelloModule extends Module {
 커맨드에 추가적인 입력이 필요하다면 파라미터를 받을 수 있어요!
 
 ```ts
-import { Module, command } from "@pikostudio/command.ts"
+import { Module, command } from "@pikokr/command.ts"
 import { Message } from "discord.js"
 
 class HelloModule extends Module {
@@ -37,7 +37,7 @@ class HelloModule extends Module {
 이 기능은 문자열 타입에서만 사용 가능해요.
 
 ```ts
-import { Module, command, rest } from "@pikostudio/command.ts"
+import { Module, command, rest } from "@pikokr/command.ts"
 import { Message } from "discord.js"
 
 class HelloModule extends Module {

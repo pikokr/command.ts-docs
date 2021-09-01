@@ -21,7 +21,7 @@ yarn tsc --init --target es6 --experimentalDecorators true --emitDecoratorMetada
 
 yarn add discord.js # Discord.JS 설치
 
-yarn add @pikostudio/command.ts # command.ts 설치
+yarn add @pikokr/command.ts # command.ts 설치
 ```
 
 </TabItem>
@@ -35,7 +35,7 @@ npx tsc --init --target es6 --experimentalDecorators true --emitDecoratorMetadat
 
 npm i discord.js # Discord.JS 설치
 
-npm i @pikostudio/command.ts # command.ts 설치
+npm i @pikokr/command.ts # command.ts 설치
 ```
 
 </TabItem>
@@ -54,7 +54,7 @@ npm i @pikostudio/command.ts # command.ts 설치
 ### 봇 코드 작성
 
 ```ts title="src/index.ts"
-import { CommandClient } from '@pikostudio/command.ts'
+import { CommandClient } from '@pikokr/command.ts'
 import { Intents, IntentsString } from 'discord.js'
 
 const client = new CommandClient({
@@ -68,7 +68,7 @@ client.registry.loadModule('modules/hello') // modules/hello 모듈 로드
 ```
 
 ```ts title="src/modules/hello.ts"
-import { Module, CommandClient, listener, command } from '@pikostudio/command.ts'
+import { Module, CommandClient, listener, command } from '@pikokr/command.ts'
 import { Message } from 'discord.js'
 
 class Hello extends Module {

@@ -9,7 +9,7 @@ sidebar_position: 2
 모듈은 `Module` 클래스를 확장해야 해요.
 
 ```ts
-import { Module, CommandClient } from "@pikostudio/command.ts"
+import { Module, CommandClient } from "@pikokr/command.ts"
 
 class MyModule extends Module {
     // 클라이언트 받기
