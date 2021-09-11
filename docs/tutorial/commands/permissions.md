@@ -9,7 +9,7 @@ import {userPermissions, command} from "@pikokr/command.ts";
 import {Message} from "discord.js";
 
 class Permissions extends Module {
-    @userPermissions(8)
+    @userPermissions(Permissions.FLAGS.ADMINISTRATOR)
     @command()
     admin(msg: Message) {
         return msg.reply('관리자용 커맨드')
@@ -24,7 +24,7 @@ import { userPermissions, clientPermissions } from "@pikokr/command.ts";
 import { Message } from "discord.js";
 
 class Permissions extends Module {
-    @clientPermissions(8)
+    @clientPermissions(Permissions.FLAGS.ADMINISTRATOR)
     @command()
     admin(msg: Message) {
         return msg.reply('봇에 관리자 권한이 있을때 실행됨')
