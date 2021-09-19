@@ -1,3 +1,8 @@
+---
+slug: /modules
+sidebar_position: 2
+---
+
 # 모듈
 
 Command.TS 모듈은 로드, 언로드, 리로드 가능하고, 커맨드 등 봇에 기능을 추가할 때 사용해요!
