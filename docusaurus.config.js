@@ -47,6 +47,11 @@ module.exports = {
           label: 'GitHub',
           position: 'right',
         },
+        {
+          href: 'https://discord.gg/EEhcPzsGHV',
+          label: 'Discord',
+          position: 'right',
+        },
       ],
     },
     footer: {
@@ -72,6 +77,10 @@ module.exports = {
               label: '파랑이 놀이터',
               href: 'https://discord.gg/EkFHRG4TZZ',
             },
+            {
+              label: 'Command.TS Community',
+              href: 'https://discord.gg/EEhcPzsGHV'
+            }
           ],
         },
         {
