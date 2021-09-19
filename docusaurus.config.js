@@ -32,6 +32,12 @@ module.exports = {
           to: 'https://v3-api.cts.pikokr.dev'
         },
         {
+          type: 'docsVersionDropdown',
+          position: 'right',
+          dropdownItemsAfter: [],
+          dropdownActiveClassDisabled: true,
+        },
+        {
           type: 'localeDropdown',
           position: 'right',
         },
