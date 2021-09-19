@@ -27,12 +27,6 @@ module.exports = {
           label: '튜토리얼',
         },
         {
-          type: 'doc',
-          docId: 'api/index',
-          position: 'left',
-          label: 'API',
-        },
-        {
           type: 'localeDropdown',
           position: 'right',
         },
@@ -101,6 +95,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/pikokr/command.ts-docs/edit/master/',
+          routeBasePath: '/'
         },
         // blog: {
         //   showReadingTime: true,
@@ -114,20 +109,9 @@ module.exports = {
       },
     ],
   ],
-  plugins: [
-    [
-      'docusaurus-plugin-typedoc',
-
-      // Plugin / TypeDoc options
-      {
-        entryPoints: ['./module/src/index.ts'],
-        tsconfig: './module/tsconfig.json',
-        watch: process.env.TYPEDOC_WATCH,
-      },
-    ],
-  ],
+  plugins: [],
   i18n: {
     defaultLocale: 'ko',
     locales: ['ko']
-  }
+  },
 };
