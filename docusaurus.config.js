@@ -36,9 +36,14 @@ module.exports = {
           type: 'localeDropdown',
           position: 'right',
         },
+        {
+          href: 'https://cts.pikokr.dev',
+          label: 'V3',
+          position: 'right',
+        },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/pikokr/command.ts-v2',
+          href: 'https://github.com/pikokr/command.ts',
           label: 'GitHub',
           position: 'right',
         },
