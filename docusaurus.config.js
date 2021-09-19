@@ -27,6 +27,11 @@ module.exports = {
           label: '튜토리얼',
         },
         {
+          label: 'API',
+          position: 'left',
+          to: 'https://v3-api.cts.pikokr.dev'
+        },
+        {
           type: 'localeDropdown',
           position: 'right',
         },
@@ -46,12 +51,12 @@ module.exports = {
           items: [
             {
               label: '튜토리얼',
-              to: '/docs/tutorial/intro',
+              to: '/',
             },
             {
               label: 'API',
-              to: '/docs/api',
-            },
+              to: 'https://v3-api.cts.pikokr.dev'
+            }
           ],
         },
         {
