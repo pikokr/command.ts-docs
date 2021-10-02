@@ -40,11 +40,13 @@ class TestView extends View {
 }
 
 class Test extends Module {
+  testView = new TestView()
+  
   @command()
   async test(msg: Message) {
     await msg.reply({
       content: 'test',
-      components: generateComponents(view),
+      components: generateComponents(this.testView),
     })
   }
 }
