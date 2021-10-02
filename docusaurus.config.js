@@ -27,6 +27,18 @@ module.exports = {
           label: '튜토리얼',
         },
         {
+          label: '애드온',
+          type: 'dropdown',
+          position: 'left',
+          items: [
+            {
+              label: 'Views',
+              type: 'doc',
+              docId: 'addons/views/index'
+            }
+          ]
+        },
+        {
           label: 'API',
           position: 'left',
           to: 'https://v3-api.cts.pikokr.dev'
