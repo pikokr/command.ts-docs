@@ -67,7 +67,8 @@ yarn tsc --init # 타입스크립트 셋업
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "strict": true,
-        "skipLibCheck": true
+        "skipLibCheck": true,
+        "sourceMap": true
     },
     "include": [
         "src/**/*"
