@@ -9,7 +9,7 @@ import { SlashCommandBuilder } from '@discordjs/builders'
 
 class Test extends Module {
     @slashCommand({
-        command: new SlashCommandBuilder().setName('tet').setDescription('테스트 커맨드')
+        command: new SlashCommandBuilder().setName('test').setDescription('테스트 커맨드')
             .addStringOption((builder) => builder.setName('test').setDescription('test option').setRequired(false)),
     })
     async test(i: CommandInteraction, @option('test') test: string = 'test') {

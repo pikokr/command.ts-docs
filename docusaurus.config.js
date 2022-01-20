@@ -120,7 +120,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/pikokr/command.ts-docs/edit/master/',
+          editUrl: 'https://github.com/pikokr/command.ts-docs/edit/v3/',
           routeBasePath: '/'
         },
         // blog: {
