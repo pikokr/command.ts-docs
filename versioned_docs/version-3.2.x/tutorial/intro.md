@@ -8,7 +8,7 @@ slug: /
 ## 템플릿 사용하기
 
 ```shell
-npx degit https://github.com/pikokr/command.ts-v3-quickstart-template project-name
+npx degit https://github.com/pikokr/command.ts-v4-quickstart-template project-name
 cd project-name
 yarn
 ```
