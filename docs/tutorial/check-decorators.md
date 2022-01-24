@@ -14,7 +14,7 @@
 
 `@requireUserPermissions(PermissionResolvable)` - 명령어를 사용하는 유저가 권한을 가지고 있는지 체크
 
-`@requireClientPermissions(PermissionResolvable)` - 클라이언트가 명령어를 사용한 서버에서 권하을 가지고 있는지 체크
+`@requireClientPermissions(PermissionResolvable)` - 클라이언트가 명령어를 사용한 서버에서 권한을 가지고 있는지 체크
 
 
 ## 커스텀 체크 데코레이터 만들기
