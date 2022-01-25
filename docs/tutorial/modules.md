@@ -18,14 +18,14 @@ class Test extends Module {
     }
 }
 
-export function install(cts: CommandClient) { // 모듈이 로딩될 때 실행
+export function install(cts: CommandClient) { // 모듈이 로드될 때 실행
     return new Test(cts)
 }
 ```
 
 ## 빌트인 모듈
 
-빌트인 모듈은 처음 로드된 후 언로딩 또는 리로딩이 불가능한 모듈이에요!
+빌트인 모듈은 처음 로드된 후 언로드 또는 리로드가 불가능한 모듈이에요!
 
 ```ts title="modules/test.ts"
 import { BuiltInModule, CommandClient } from '@pikokr/command.ts'
@@ -36,14 +36,14 @@ class Test extends BuiltInModule {
     }
 }
 
-export function install(cts: CommandClient) { // 모듈이 로딩될 때 실행
+export function install(cts: CommandClient) { // 모듈이 로드될 때 실행
     return new Test(cts)
 }
 ```
 
 ## 모듈 로드하기
 
-모듈 로딩은 레지스트리의 loadModule 메서드로 할 수 있어요!
+모듈 로드는 레지스트리의 loadModule 메서드로 할 수 있어요!
 
 ```ts
 cts.registry.loadModule('modules/test') // modules/test.ts 로드
