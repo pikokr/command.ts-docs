@@ -44,7 +44,7 @@ yarn prod # 프로젝트 실행
 ```shell
 yarn init -y # 프로젝트 초기화
 yarn add --dev typescript @types/node ts-node # 타입스크립트 관련 패키지 설치
-yarn add discord.js @discordjs/builders discord-api-types @discordjs/rest @pikokr/command.ts@3 # Command.TS / Discord.JS 설치
+yarn add discord.js @discordjs/builders discord-api-types @discordjs/rest @pikokr/command.ts@4 # Command.TS / Discord.JS 설치
 yarn tsc --init # 타입스크립트 셋업
 ```
 
@@ -58,38 +58,38 @@ yarn tsc --init # 타입스크립트 셋업
 
 ```json title="tsconfig.json"
 {
-    "compilerOptions": {
-        "target": "es6",
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true,
-        "module": "commonjs",
-        "outDir": "./dist",
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
-        "strict": true,
-        "skipLibCheck": true,
-        "sourceMap": true
-    },
-    "include": [
-        "src/**/*"
-    ],
-    "exclude": [
-        "node_modules"
-    ]
+  "compilerOptions": {
+    "target": "es6",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "sourceMap": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
 ```
 
 ### 봇 코드 작성하기
 
 ```ts title="src/index.ts"
-import { Client, Intents, IntentsString } from 'discord.js'
-import { CommandClient } from '@pikokr/command.ts'
+import { Client, Intents, IntentsString } from "discord.js";
+import { CommandClient } from "@pikokr/command.ts";
 
-const cts = new CommandClient({ client: new Client({intents: Object.keys(Intents.FLAGS) as IntentsString[]}) })
+const cts = new CommandClient({
+  client: new Client({
+    intents: Object.keys(Intents.FLAGS) as IntentsString[],
+  }),
+});
 
-cts.registry.loadModulesIn('modules') // modules 폴더에 있는 모듈 모두 로드
+cts.registry.loadModulesIn("modules"); // modules 폴더에 있는 모듈 모두 로드
 
-cts.client.login('TOKEN_HERE')
+cts.client.login("TOKEN_HERE");
 ```
 
 ### 모듈 작성하기
