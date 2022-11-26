@@ -197,3 +197,35 @@ await commandClient.getApplicationCommandsExtension()!.sync()
 `guilds` 옵션은 커맨드 등록 시 어떤 서버에 등록할 지 설정하는 옵션입니다. undefined로 설정해 주면 글로벌 커맨드로 작동합니다.
 
 :::
+
+## 이벤트 리스너
+
+command.ts에는 `client.on` 대신 사용 가능한 데코레이터인 `@listener`이 있습니다.  
+이 데코레이터는 커맨드 데코레이터처럼 모듈 안에서 사용 가능하고, EventEmitter 클래스를 상속하는 모든 클래스에 사용할 수 있습니다.
+
+### 기본 사용법
+
+```ts title="extensions/Hello.ts"
+import { Extension, listener } from "@pikokr/command.ts"
+import { Message } from "discord.js"
+
+class HelloExtension extends Extension {
+  @listener({ name: "messageCreate", emitter: "discord" })
+  async hello(msg: Message) {
+    console.log("Received message:", msg.content)
+  }
+}
+```
+
+| 부분                    | 설명                                                                        |
+| ----------------------- | --------------------------------------------------------------------------- |
+| `name: "messageCreate"` | 설정된 EventEmitter 인스턴스의 messageCreate라는 이벤트를 받도록 설정합니다 |
+| `emitter: "discord"`    | `discord`라는 이름의 EventEmitter에 이벤트를 추가합니다                     |
+
+### 고급 사용법 - EventEmitter 추가
+
+```ts
+commandClient.registry.registerEventEmitter("shardingManager", shardingManager)
+```
+
+이 코드는 `shardingManager`이라는 이름의 emitter을 추가합니다.
