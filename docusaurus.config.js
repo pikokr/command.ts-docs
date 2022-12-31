@@ -1,108 +1,91 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github")
+const darkCodeTheme = require("prism-react-renderer/themes/dracula")
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Command.TS',
-  tagline: 'Discord.JS Command Framework for Typescript',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'pikokr', // Usually your GitHub org/user name.
-  projectName: 'command.ts-docs', // Usually your repo name.
+  title: "Command.TS",
+  tagline: "Discord.JS Command Framework for Typescript",
+  url: "https://your-docusaurus-test-site.com",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "pikokr", // Usually your GitHub org/user name.
+  projectName: "command.ts-docs", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Command.TS',
+      title: "Command.TS",
       // logo: {
       //   alt: 'My Site Logo',
       //   src: 'img/logo.svg',
       // },
       items: [
         {
-          type: 'doc',
-          docId: 'tutorial/intro',
-          position: 'left',
-          label: '튜토리얼',
+          type: "doc",
+          docId: "tutorial/intro",
+          position: "left",
+          label: "튜토리얼",
         },
         {
-          label: '애드온',
-          type: 'dropdown',
-          position: 'left',
-          items: [
-            {
-              label: 'Views',
-              type: 'doc',
-              docId: 'addons/views/index'
-            }
-          ]
+          type: "localeDropdown",
+          position: "right",
         },
         {
-          label: 'API',
-          position: 'left',
-          to: 'https://v3-api.cts.pikokr.dev'
-        },
-        {
-          type: 'localeDropdown',
-          position: 'right',
-        },
-        {
-          type: 'docsVersionDropdown',
-          position: 'right'
+          type: "docsVersionDropdown",
+          position: "right",
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/pikokr/command.ts-v2',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/pikokr/command.ts-v2",
+          label: "GitHub",
+          position: "right",
         },
         {
-          href: 'https://discord.gg/EEhcPzsGHV',
-          label: 'Discord',
-          position: 'right',
+          href: "https://discord.gg/EEhcPzsGHV",
+          label: "Discord",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: '튜토리얼',
-              to: '/',
+              label: "튜토리얼",
+              to: "/",
             },
             {
-              label: 'API',
-              to: 'https://v3-api.cts.pikokr.dev'
-            }
+              label: "API",
+              to: "https://v3-api.cts.pikokr.dev",
+            },
           ],
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: '파랑이 놀이터',
-              href: 'https://discord.gg/EkFHRG4TZZ',
+              label: "파랑이 놀이터",
+              href: "https://discord.gg/EkFHRG4TZZ",
             },
             {
-              label: 'Command.TS Community',
-              href: 'https://discord.gg/EEhcPzsGHV'
-            }
+              label: "Command.TS Community",
+              href: "https://discord.gg/EEhcPzsGHV",
+            },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             // {
             //   label: 'Blog',
             //   to: '/blog',
             // },
             {
-              label: 'GitHub',
-              href: 'https://github.com/pikokr/command.ts-v2',
+              label: "GitHub",
+              href: "https://github.com/pikokr/command.ts-v2",
             },
           ],
         },
@@ -114,18 +97,18 @@ module.exports = {
       darkTheme: darkCodeTheme,
     },
     colorMode: {
-      defaultMode: 'dark'
-    }
+      defaultMode: "dark",
+    },
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: 'https://github.com/pikokr/command.ts-docs/edit/v3/',
-          routeBasePath: '/'
+          editUrl: "https://github.com/pikokr/command.ts-docs/edit/v3/",
+          routeBasePath: "/",
         },
         // blog: {
         //   showReadingTime: true,
@@ -134,14 +117,14 @@ module.exports = {
         //     'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         // },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
   ],
   plugins: [],
   i18n: {
-    defaultLocale: 'ko',
-    locales: ['ko']
+    defaultLocale: "ko",
+    locales: ["ko"],
   },
-};
+}
