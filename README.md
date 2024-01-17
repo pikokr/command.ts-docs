@@ -1,3 +1,3 @@
-# Command.TS Docs
+# command.ts Documentation
 
-[command.ts](https://github.com/pikokr/command.ts) 모듈 문서입니다
+Documentation repository for [command.ts](https://github.com/pikokr/command.ts)

@@ -1,0 +1,30 @@
+# 모듈 작성하기
+
+이전 문서에서 `modules` 폴더에 있는 파일을 자동으로 로드하도록 설정했어요. 이제 모듈을 작성하는 방법에 대해 다룰게요.
+
+## [Extension](../reference/classes/Extension.md) 클래스
+
+[Extension](../reference/classes/Extension.md)은 Command.TS에서 대부분의 기능을 사용하기 위해 상속해야 하는 클래스에요.
+
+해당 클래스를 상속하면 모듈을 작성할 수 있어요. 예시로 한번 만들어 봅시다.
+
+```ts filename="modules/hello.ts" copy {12-14} /extends Extension/
+import { Extension, applicationCommand, listener } from "@pikokr/command.ts"
+import { ApplicationCommandType, ChatInputCommandInteraction } from "discord.js"
+
+class HelloExtension extends Extension {
+	@listener({ event: "ready" })
+	async ready() {
+		this.logger.info(`Hello, discord! ${this.client.user?.tag}`)
+		await this.commandClient.fetchOwners()
+	}
+}
+
+export const setup = async () => {
+	return new HelloExtension()
+}
+```
+
+위 예시처럼 [Extension](../reference/classes/Extension.md)을 상속한 클래스에서는 Command.TS가 제공하는 데코레이터들을 사용하실 수 있어요.
+
+그리고, 모듈을 자동으로 로드하기 위해서는 `setup` 함수를 내보내야 해요. (라인 12-14 참고)
